@@ -1,6 +1,6 @@
 # This is the repository where we calculate dNdS ratios for all shared genes in our lucinid clams.
 
-# Unfortunately, the tutorial is pretty bad in a way that it does not tell you that you have to install plenty of tools before you can run it.
+## Unfortunately, the tutorial is pretty bad in a way that it does not tell you that you have to install plenty of tools before you can run it.
 
 Original tutorial: https://www.protocols.io/view/introduction-to-calculating-dn-ds-ratios-with-code-qhwdt7e?step=4
 
@@ -8,7 +8,7 @@ Original tutorial: https://www.protocols.io/view/introduction-to-calculating-dn-
 
 
 
-# Step 2 CLUSTALO:
+## Step 2 CLUSTALO:
 
 
 To make AA sequence alignemnts.
@@ -32,7 +32,7 @@ clustalo -i 998674.ATTE01000001_gene588.faa-o cluster_1.aln.faa
 ```
 
 
-# Step 3:
+## Step 3:
 
 
 PAL2NAL converts a multiple sequence alignment of proteins and the corresponding DNA (or mRNA) sequences into a codon alignment. Synonymous (Ks) and non-synonymous (Ka) substitution rates can be calculated.
@@ -47,7 +47,7 @@ pal2nal.pl cluster_1.aln.faa 998674.ATTE01000001_gene588.fna -output paml -nogap
 ```
 
 
-# Step 4:
+## Step 4:
 
 
 To run codeml all we need to do is type 'codeml' in the same folder that the codeml.ctl file is in
@@ -76,7 +76,7 @@ paml4.8/bin/codeml (basically step 3)
 
 
 
-# Parse output:
+## Parse output:
 
 ```
 python parse_codeml_output.py codeml.txt
@@ -90,6 +90,6 @@ Should I change the value of 'runmode'? See thread here: https://www.biostars.or
 PAML Manual is here: https://embnet.vital-it.ch/CoursEMBnet/PagesPHYL07/Exercises/day2/pamlDOC.pdf
 
 
-# Try to clone Kevin's repository
+## Try to clone Kevin's repository
 
 I could not do it because I do not know his user name!!!
