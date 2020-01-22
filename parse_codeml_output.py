@@ -4,7 +4,7 @@ from collections import defaultdict
 
 codeml = open(sys.argv[1], "r") # codeml pairwise ML output here
 
-print "Gene_1\tGene_2\tdnds\tdN\tdS"
+print("Gene_1\tGene_2\tdnds\tdN\tdS")
 status = 0
 genome_dnds = defaultdict(list)
 #print "first\tsecond\tdnds\tdn\tds"
@@ -35,7 +35,7 @@ for i in codeml.readlines():
 			dn = tabs[9]
 			ds = tabs[11]
 			if float(ds) < 2 and float(ds) > 0.01 and float(dnds) < 10:
-				print first +"\t"+ second +"\t"+ dnds +"\t"+ dn +"\t"+ ds
+				print(first +"\t"+ second +"\t"+ dnds +"\t"+ dn +"\t"+ ds)
 
 			
 			

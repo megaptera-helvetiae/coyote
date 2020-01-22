@@ -1,0 +1,25 @@
+# these are all the commands of Wednesday January 22nd 2020:
+
+
+So basically what we are doing is the following:
+
+mkdir some directory
+copy all the necessary files in there (not the git files)
+cd in there
+nano README.md add some random text
+git init .
+git status
+git add file name (git add --all)
+git commit -m "What I did"
+git log
+Then I created a new repository with the same name on GitHub
+git remote add origin https://github.com/megaptera-helvetiae/coyote
+git push -u origin master
+git pull
+git log
+
+git add --all
+git commit 
+git status
+git push
+
