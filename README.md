@@ -19,6 +19,7 @@ Instructions from here: https://www.biostars.org/p/128261/
 ```
 ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 brew install argtable
+brew install clustalo
 ./configure CFLAGS="-I/usr/local/include" LDFLAGS="-L/usr/local/lib" --prefix="/usr/local"
 make
 sudo make install
