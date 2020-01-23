@@ -31,7 +31,7 @@ which clustalo
 
 And once installed, we run:
 ```
-clustalo -i 998674.ATTE01000001_gene588.faa-o cluster_1.aln.faa
+clustalo -i 998674.ATTE01000001_gene588.faa -o cluster_1.aln.faa
 ```
 
 
