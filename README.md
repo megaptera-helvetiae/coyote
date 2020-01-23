@@ -16,6 +16,9 @@ To make AA sequence alignemnts.
 How to install clustalo:
 Instructions from here: https://www.biostars.org/p/128261/
 
+First you have to download the source code and unzip it on your Macbook.
+cd into the new Clustal Omega directory.
+
 ```
 ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 brew install argtable
