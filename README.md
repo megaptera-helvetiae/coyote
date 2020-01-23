@@ -22,8 +22,7 @@ cd into the new Clustal Omega directory.
 ```
 ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 brew install argtable
-brew install clustalo
-./configure CFLAGS="-I/usr/local/include" LDFLAGS="-L/usr/local/lib" --prefix="/usr/local"
+./configure CFLAGS="-I/usr/local/include" LDFLAGS="-L/usr/local/lib" --prefix="/usr/local" # for this you have to be inside the clustalo directory
 make
 sudo make install
 which clustalo
