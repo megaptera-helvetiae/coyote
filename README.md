@@ -21,10 +21,10 @@ Instructions from here: https://www.biostars.org/p/128261/
 ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 brew install argtable
 
-# Download Clustalo:
-wget -qO- http://www.clustal.org/omega/clustal-omega-1.2.1.tar.gz > clustal-omega-1.2.1.tar.gz
+# Download Clustalo from its website (manually):
+http://www.clustal.org/omega/
 # Unzip it:
-tar zxvf clustal-omega-1.2.1.tar.gz
+tar zxvf clustal-omega-1.2.4.tar.gz
 # cd into it
 ./configure CFLAGS="-I/usr/local/include" LDFLAGS="-L/usr/local/lib" --prefix="/usr/local"
 
