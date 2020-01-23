@@ -44,7 +44,7 @@ Throw it into your working directory.
 
 And once installed, we run:
 ```
-pal2nal.pl cluster_1.aln.faa 998674.ATTE01000001_gene588.fna -output paml -nogap > cluster_1.pal2nal
+perl pal2nal.pl cluster_1.aln.faa 998674.ATTE01000001_gene588.fna -output paml -nogap > cluster_1.pal2nal
 ```
 
 
