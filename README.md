@@ -16,13 +16,18 @@ To make AA sequence alignemnts.
 How to install clustalo:
 Instructions from here: https://www.biostars.org/p/128261/
 
-First you have to download the source code and unzip it on your Macbook.
-cd into the new Clustal Omega directory.
-
 ```
+# You might have to install Homebrew first:
 ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 brew install argtable
-./configure CFLAGS="-I/usr/local/include" LDFLAGS="-L/usr/local/lib" --prefix="/usr/local" # for this you have to be inside the clustalo directory
+
+# Download Clustalo:
+wget -qO- http://www.clustal.org/omega/clustal-omega-1.2.1.tar.gz > clustal-omega-1.2.1.tar.gz
+# Unzip it:
+tar zxvf clustal-omega-1.2.1.tar.gz
+# cd into it
+./configure CFLAGS="-I/usr/local/include" LDFLAGS="-L/usr/local/lib" --prefix="/usr/local"
+
 make
 sudo make install
 which clustalo
