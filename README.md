@@ -142,5 +142,5 @@ Then I pushed my commits to his GitHub repository:
 ```
 git push -u origin twig_Laetitia
 ```
-type in username
-type in password
+type in username.
+type in password.
