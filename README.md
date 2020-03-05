@@ -32,11 +32,27 @@ make
 sudo make install
 which clustalo
 /usr/local/bin/clustalo
+
+# If you are working on a server:
+
+# download this file from the Clustalo website: http://www.clustal.org/omega/
+scp /Users/megaptera/Downloads/clustal-omega-1.2.4.tar.gz megaptera@barbera.genomecenter.ucdavis.edu:/share/eisenlab/megaptera/clam_alignments/
+
+# You also need argtable2!
+wget -qO- http://prdownloads.sourceforge.net/argtable/argtable2-13.tar.gz > argtable2-13.tar.gz
+tar zxvf argtable2-13.tar.gz
+cd argtable2-13
+./configure --prefix="/share/eisenlab/megaptera/clam_alignments"
+
+# Now go into Clustalo directory and run the following:
+./configure CFLAGS="-I/share/eisenlab/megaptera/clam_alignments/clustal-omega-1.2.4/argtable2-13/src/" LDFLAGS="-L/share/eisenlab/megaptera/clam_alignments/lib/" --prefix="/share/eisenlab/megaptera/clam_alignments"
+
 ```
 
 And once installed, we run:
 ```
 clustalo -i 998674.ATTE01000001_gene588.faa -o cluster_1.aln.faa
+(in this case in /share/eisenlab/megaptera/clam_alignments)
 ```
 
 
@@ -65,6 +81,7 @@ However, that does not help. I want to run it in terminal. (not ./pamlX)
 Download source code from here: http://abacus.gene.ucl.ac.uk/software/paml.html
 And download the latest archive and save on your hard disk. 
 Unzip it.
+scp /Users/megaptera/Downloads/paml4.8a.macosx.tgz megaptera@barbera.genomecenter.ucdavis.edu:/share/eisenlab/megaptera/clam_alignments/
 
 ```
 cd src
