@@ -81,9 +81,8 @@ However, that does not help. I want to run it in terminal. (not ./pamlX)
 Download source code from here: http://abacus.gene.ucl.ac.uk/software/paml.html
 And download the latest archive and save on your hard disk. 
 Unzip it.
-scp /Users/megaptera/Downloads/paml4.8a.macosx.tgz megaptera@barbera.genomecenter.ucdavis.edu:/share/eisenlab/megaptera/clam_alignments/
-
 ```
+scp /Users/megaptera/Downloads/paml4.8a.macosx.tgz megaptera@barbera.genomecenter.ucdavis.edu:/share/eisenlab/megaptera/clam_alignments/
 cd src
 make
 ls -lF
@@ -118,3 +117,30 @@ PAML Manual is here: https://embnet.vital-it.ch/CoursEMBnet/PagesPHYL07/Exercise
 ## Try to clone Kevin's repository
 
 I could not do it because I do not know his user name!!!
+Once I found out his username he had to invite me to be a collaborator first. Then, we did some branching.
+
+I am changing your repository by adding a text file. I also branched it and am I am working on my own branch now.
+
+I used the following commands:
+
+```
+cd /Users/megaptera/Desktop
+mkdir Kevin_code
+cd Kevin_code
+ls
+git clone https://github.com/kjcai22/dnds
+cd dnds
+git branch
+git branch twig_Laetitia
+git checkout twig_Laetitia
+git branch # now the star is at my new twig
+```
+
+Kevin had to invite me as a collaborator.
+
+Then I pushed my commits to his GitHub repository:
+```
+git push -u origin twig_Laetitia
+```
+type in username
+type in password
